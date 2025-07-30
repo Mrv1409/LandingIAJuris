@@ -235,26 +235,55 @@ p {
 .header-actions {
   display: none;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
 }
 
 .whatsapp-btn {
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
   color: var(--brown) !important;
-  border-color: var(--brown) !important;
+  border: 2px solid var(--brown) !important;
+  transition: all 0.3s ease;
+  backdrop-filter: blur(8px);
 }
 
 .whatsapp-btn:hover {
   background: var(--brown) !important;
   color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(139, 69, 19, 0.3);
 }
 
 .demo-btn {
-  background: var(--gold) !important;
+  font-family: 'Inter', sans-serif;
+  font-weight: 700;
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold)) !important;
   color: var(--black) !important;
+  border: none !important;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.demo-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+  transition: left 0.5s ease;
 }
 
 .demo-btn:hover {
-  background: var(--dark-gold) !important;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+  animation: glow 2s ease-in-out infinite;
+}
+
+.demo-btn:hover::before {
+  left: 100%;
 }
 
 .mobile-menu-btn {
