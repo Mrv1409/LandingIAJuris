@@ -8,6 +8,7 @@ import Pricing from './sections/Pricing';
 import FAQ from './sections/FAQ';
 import Contact from './sections/Contact';
 import Footer from './sections/Footer';
+import { Toaster } from './ui/toaster';
 
 const LandingPage = () => {
   return (
@@ -23,6 +24,7 @@ const LandingPage = () => {
         <Contact />
       </main>
       <Footer />
+      <Toaster />
     </div>
   );
 };
