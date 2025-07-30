@@ -427,16 +427,35 @@ p {
 .hero-features {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  gap: 32px;
   margin-bottom: 40px;
 }
 
 .hero-feature {
   display: flex;
   align-items: center;
-  gap: 8px;
-  color: rgba(255, 255, 255, 0.9);
-  font-weight: 500;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.95);
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  padding: 12px 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  animation: slideIn 0.8s ease;
+}
+
+.hero-feature:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+.hero-feature svg {
+  color: var(--gold);
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.2));
 }
 
 .hero-actions {
