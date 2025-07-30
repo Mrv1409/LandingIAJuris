@@ -47,14 +47,42 @@ body {
 
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
+  font-family: 'Poppins', sans-serif;
   font-weight: 700;
   line-height: 1.2;
   color: var(--black);
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 p {
+  font-family: 'Inter', sans-serif;
   color: var(--gray-dark);
   line-height: 1.7;
+  font-weight: 400;
+}
+
+/* Enhanced text contrast for better readability */
+.features-section p,
+.pricing-section p,
+.contact-section p {
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+.features-section h1,
+.features-section h2,
+.features-section h3,
+.features-section h4,
+.pricing-section h1,
+.pricing-section h2,
+.pricing-section h3,
+.pricing-section h4,
+.contact-section h1,
+.contact-section h2,
+.contact-section h3,
+.contact-section h4 {
+  color: white;
+  text-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
 }
 
 /* Animations */
