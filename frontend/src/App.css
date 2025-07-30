@@ -1147,6 +1147,13 @@ p {
 
 .contact-card {
   margin-bottom: 32px;
+  background: white;
+}
+
+.contact-section .contact-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 .contact-card-title {
