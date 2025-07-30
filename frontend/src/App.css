@@ -542,12 +542,23 @@ p {
   transition: all 0.3s ease;
   border: 1px solid var(--gray-medium);
   overflow: hidden;
+  background: white;
+}
+
+.features-section .feature-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 .feature-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 60px var(--shadow);
   border-color: var(--gold);
+}
+
+.features-section .feature-card:hover {
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
 }
 
 .feature-image {
