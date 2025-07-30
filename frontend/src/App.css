@@ -1124,7 +1124,16 @@ p {
 /* Contact Section */
 .contact-section {
   padding: 120px 0;
-  background: white;
+  background: var(--black);
+  color: white;
+}
+
+.contact-section .section-title {
+  color: white;
+}
+
+.contact-section .section-description {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .contact-content {
