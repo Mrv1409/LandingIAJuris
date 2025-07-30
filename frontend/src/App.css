@@ -854,11 +854,22 @@ p {
   transition: all 0.3s ease;
   position: relative;
   overflow: hidden;
+  background: white;
+}
+
+.pricing-section .pricing-card {
+  background: rgba(255, 255, 255, 0.95);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px);
 }
 
 .pricing-card:hover {
   transform: translateY(-8px);
   box-shadow: 0 20px 60px var(--shadow);
+}
+
+.pricing-section .pricing-card:hover {
+  box-shadow: 0 20px 60px rgba(212, 175, 55, 0.3);
 }
 
 .pricing-featured .pricing-card {
