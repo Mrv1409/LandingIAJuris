@@ -978,8 +978,18 @@ p {
 .pricing-guarantee {
   text-align: center;
   padding: 60px 40px;
-  background: var(--gray-light);
+  background: rgba(255, 255, 255, 0.1);
   border-radius: 20px;
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.pricing-section .guarantee-title {
+  color: white;
+}
+
+.pricing-section .guarantee-text {
+  color: rgba(255, 255, 255, 0.8);
 }
 
 .guarantee-title {
