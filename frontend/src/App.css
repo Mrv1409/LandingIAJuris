@@ -197,30 +197,35 @@ p {
 .desktop-nav {
   display: none;
   align-items: center;
-  gap: 32px;
+  gap: 40px;
 }
 
 .desktop-nav a {
+  font-family: 'Inter', sans-serif;
   color: var(--gray-dark);
   text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-weight: 600;
+  font-size: 15px;
+  transition: all 0.3s ease;
   position: relative;
+  padding: 8px 0;
 }
 
 .desktop-nav a::after {
   content: '';
   position: absolute;
-  bottom: -4px;
+  bottom: 0;
   left: 0;
   width: 0;
-  height: 2px;
-  background: var(--gold);
-  transition: width 0.3s ease;
+  height: 3px;
+  background: linear-gradient(135deg, var(--gold), var(--dark-gold));
+  transition: width 0.4s ease;
+  border-radius: 2px;
 }
 
 .desktop-nav a:hover {
   color: var(--gold);
+  transform: translateY(-1px);
 }
 
 .desktop-nav a:hover::after {
